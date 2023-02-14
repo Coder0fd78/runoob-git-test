@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class RecursionMain {
     public static void main(String[] args) {
         //test01
@@ -22,5 +24,25 @@ public class RecursionMain {
         RecursionExercise01 fibonacci=new RecursionExercise01();
         int resFibonacci=fibonacci.Fibonacci(7);
         System.out.println("当n=5时对应的斐波那契="+resFibonacci);
+        //MonkeyEat
+        System.out.println("====猴子吃桃====");
+        System.out.println("请输入天数:");
+        Scanner sc=new Scanner(System.in);
+        int day=sc.nextInt();
+        MonkeyEat monkey=new MonkeyEat();
+        int Peach=monkey.monkeyEat(day);
+        System.out.println("第"+day+"天的桃子数量是："+Peach);
+        //mouseMaze
+        System.out.println("====老鼠走迷宫====");
+        maze Maze_Map=new maze();
+        Maze_Map.MapMaze();
+        //HanoiTower
+        System.out.println("====汉诺塔游戏====");
+        HanoiTower hanoiTower=new HanoiTower();
+        hanoiTower.move(5,'A','B','C');
+        //EightEmpresses
+        System.out.println("====八皇后====");
+
+
     }
 }
