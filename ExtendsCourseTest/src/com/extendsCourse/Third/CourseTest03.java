@@ -78,7 +78,8 @@ class NotePad extends Computer {
     private String color;
 
     public NotePad(String CPU, String memory, String hardDisk, String color) {
-        super(CPU, memory, hardDisk);
+        super
+                (CPU, memory, hardDisk);
         this.color = color;
     }
 
