@@ -97,8 +97,6 @@ public class HouseView {
         System.out.print("请输入您需要查找的房屋的编号：");
         int findId=getIndex.nextInt();
         houseService.FindHouse(findId);
-
-
     }
 
     public void reviseHouse(){
